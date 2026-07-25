@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="docs/media/wildland-hero.jpg" alt="Wildland — in-engine capture: the player character in a sunlit pine forest, Unreal Engine 5.8" width="100%">
+</p>
+
+<p align="center"><em>In-engine capture — Unreal Engine 5.8, no post-processing added.</em></p>
+
 # Wildland — Studio & Workflow
 
 **A solo-directed, AI-orchestrated AAA open-world game.**
