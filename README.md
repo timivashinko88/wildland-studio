@@ -2,7 +2,7 @@
   <img src="docs/media/wildland-hero.jpg" alt="Wildland — in-engine capture: Áhí, the player character, in a golden-hour pine forest with the gameplay HUD, Unreal Engine 5.8" width="100%">
 </p>
 
-<p align="center"><em>In-engine capture — Unreal Engine 5.8, golden hour. HUD: Áhí's health bar and hawk meter, drawn from the game's own HUD spec.</em></p>
+<p align="center"><em>In-engine capture — Unreal Engine 5.8, golden hour.</em></p>
 
 # Wildland — Studio & Workflow
 
