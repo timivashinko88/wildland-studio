@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/media/wildland-hero.jpg" alt="Wildland — in-engine capture: the player character in a sunlit pine forest, Unreal Engine 5.8" width="100%">
+  <img src="docs/media/wildland-hero.jpg" alt="Wildland — in-engine capture: Áhí, the player character, in a golden-hour pine forest with the gameplay HUD, Unreal Engine 5.8" width="100%">
 </p>
 
-<p align="center"><em>In-engine capture — Unreal Engine 5.8, no post-processing added.</em></p>
+<p align="center"><em>In-engine capture — Unreal Engine 5.8, golden hour. HUD: Áhí's health bar and hawk meter, drawn from the game's own HUD spec.</em></p>
 
 # Wildland — Studio & Workflow
 
@@ -13,7 +13,7 @@
 ![Gameplay](https://img.shields.io/badge/Gameplay-Blueprints-2A2A72)
 ![VCS](https://img.shields.io/badge/Assets-Perforce-404040)
 ![Platform](https://img.shields.io/badge/Platform-PC%20(controller--friendly)-1f6feb)
-![Target](https://img.shields.io/badge/Perf-144fps%20%40%201440p-3fb950)
+![Target](https://img.shields.io/badge/Perf-Stable%2060fps%20%40%201440p-3fb950)
 ![Status](https://img.shields.io/badge/Status-In%20Production-blue)
 
 Wildland is a story-driven, third-person open-world action game — built and directed by **one
@@ -38,16 +38,20 @@ I'm the director, architect, and sole authority on this project. Concretely, han
 - **Architect the systems** — I decide *where* every system lives before *how* it works: the C++
   character core, the athletic locomotion layer, the transformation state machine, world streaming,
   the camera, the frame budget. Architecture before implementation, always.
-- **Drive the engine directly** — I operate Unreal Engine 5.8 day to day: the C++/Blueprint split,
-  Nanite and foliage pipelines, material graphs, lighting and atmosphere, Movie Render Graph capture,
-  and Perforce for all binary assets.
+- **Read and own the C++** — I'm comfortable in the codebase and go into the code whenever it matters:
+  reviewing diffs, tracing bugs through the character, hawk-transform and HUD systems, and checking
+  that what the agents wrote is what I actually decided.
+- **Drive the engine directly** — I operate Unreal Engine 5.8 day to day and build its pipelines: the
+  C++/Blueprint split, Nanite and foliage pipelines, material graphs, lighting and atmosphere, World
+  Partition, capture, and Perforce for all binary assets.
 - **Build and wire the pipeline** — the multi-agent studio, the build/verify gates, the measurement
   tooling, the model-routing policy, and the automation that lets production run unattended are things
   I designed and maintain.
 - **Own every visual and technical call** — nothing ships on look, feel, or performance without my
   explicit sign-off. Agents propose; I decide. Silence is never approval.
-- **Integrate the tools** — engine plugins, MetaHuman, the 3D/asset toolchain, capture and QA
-  scripts. The AAA look comes from *art direction → lighting → integration*, and I own that seam.
+- **Integrate the tools** — the DCC side as well as the engine: Blender for mesh, fitting and
+  retopo work, Marvelous Designer for clothing, MetaHuman, engine plugins, and the capture and QA
+  scripts that connect them. The AAA look comes from *art direction → lighting → integration*, and I own that seam.
 
 The AI studio is a force multiplier, not a replacement for judgment. It handles the volume; I hold
 the bar.
