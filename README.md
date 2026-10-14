@@ -27,10 +27,6 @@ title at a AAA quality bar by pairing hands-on engine and systems work with a di
 AI-assisted production pipeline. The game's design, assets, and source live in a private depot; what's
 public here is the *method*.
 
-> **The models are not the bottleneck. The process is.** A frontier model with no grader produces
-> mediocrity confidently; a mid-tier model behind a savage review gate produces good work. Excellence
-> is a property of the process that refuses to accept less.
-
 ---
 
 ## What I actually do here
