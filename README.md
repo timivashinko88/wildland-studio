@@ -6,7 +6,7 @@
 
 # Wildland — Studio & Workflow
 
-**A solo-directed, AI-orchestrated AAA open-world game.**
+**A professional, AAA-quality open-world game — built, engineered, and directed by one developer, with AI as a force multiplier.**
 
 ![Engine](https://img.shields.io/badge/Unreal%20Engine-5.8-0E1128?logo=unrealengine&logoColor=white)
 ![Language](https://img.shields.io/badge/Core-C%2B%2B-00599C?logo=cplusplus&logoColor=white)
@@ -16,14 +16,16 @@
 ![Target](https://img.shields.io/badge/Perf-Stable%2060fps%20%40%201440p-3fb950)
 ![Status](https://img.shields.io/badge/Status-In%20Production-blue)
 
-Wildland is a story-driven, third-person open-world action game — built and directed by **one
-person** commanding a studio of specialized AI agents, with **every architectural, technical, and
-creative decision made and owned by the director**.
+Wildland is a story-driven, third-person open-world action game — a real, professional
+game-development project built and directed by **one developer**. The hands-on engineering is mine:
+the C++, the Unreal Engine work, the Blueprints, the tools, the build pipeline, and the
+infrastructure. AI is the **force multiplier** I use to move faster and cover more ground — but
+**every architectural, technical, and creative decision is made and owned by me**.
 
-This repository isn't the game. It's the **workflow** — how a single director builds an open-world
-title at a AAA quality bar by combining hands-on engine work with a disciplined, gated, multi-agent
-production pipeline. The game's design, assets, and source live in a private depot; what's public
-here is the *method*.
+This repository isn't the game. It's the **workflow** — how a single developer builds an open-world
+title at a AAA quality bar by pairing hands-on engine and systems work with a disciplined, gated,
+AI-assisted production pipeline. The game's design, assets, and source live in a private depot; what's
+public here is the *method*.
 
 > **The models are not the bottleneck. The process is.** A frontier model with no grader produces
 > mediocrity confidently; a mid-tier model behind a savage review gate produces good work. Excellence
@@ -132,6 +134,31 @@ Full detail: **[docs/workflow.md](docs/workflow.md)** · **[docs/principles.md](
 - **Version control:** Git for the design/workflow layer, Perforce for all binary game assets
 - **Automation:** a multi-agent production pipeline with build-gated verification and adversarial
   visual review
+
+---
+
+## Infrastructure
+
+Running a one-developer studio at a professional bar means the plumbing has to be real, not
+improvised. A chunk of this project is the engineering *around* the game — the version control,
+servers, and multi-machine setup that a studio would normally have a whole IT/ops team for.
+
+- **Perforce (Helix Core) as the asset backbone.** Every binary asset — meshes, textures,
+  animations, audio, and the Unreal project itself — lives in a Perforce depot, the same
+  version-control system AAA studios use for the large binary content that Git handles poorly.
+  Atomic submits, file locking, and full history on multi-gigabyte assets.
+- **Cloud-hosting the depot on Azure (in progress).** I'm standing up the Perforce server on
+  **Microsoft Azure** so the depot is cloud-backed and reachable from anywhere instead of being
+  pinned to a single box on my desk — the goal is proper remote access, resilience, and a clean path
+  to off-site backup, the way a distributed studio actually operates.
+- **Multi-machine workflow.** The project is built across several computers with non-overlapping
+  jobs — a **macOS** machine for architecture, research, and pipeline strategy, and a **Windows**
+  desktop for Unreal, C++, and asset production — each syncing to and submitting against the same
+  Perforce depot. I can sit down at any machine, sync the latest, and keep building; nothing
+  important lives in only one place.
+- **Git as the wire between machines.** Decisions and build-state flow between the strategy and
+  build machines through Git (append-only, one writer per file), which keeps the two sides
+  coordinated and conflict-free while Perforce carries the heavy binary assets.
 
 ---
 
