@@ -32,15 +32,12 @@ public here is the *method*.
 ## In motion
 
 <p align="center">
-  <a href="docs/media/hawk-transform.mp4">
-    <img src="docs/media/hawk-transform-preview.gif" alt="Wildland: Áhí transforms into a hawk, flies, and changes back into human form in mid-air, recorded in Unreal Engine 5.8" width="100%">
-  </a>
+  <img src="docs/media/hawk-transform-preview.gif" alt="Wildland: Áhí transforms into a hawk, flies, and changes back into human form in mid-air, recorded in Unreal Engine 5.8" width="100%">
 </p>
 
 <p align="center">
   <strong>Human → hawk → human</strong><br>
-  <em>Recorded in Unreal Engine 5.8 on the grey-box test level at a locked 60 fps. Every frame is rendered, and there's no screen capture.</em><br>
-  <a href="docs/media/hawk-transform.mp4"><strong>▶ Watch in full quality (1080p60, 12.6 s)</strong></a>
+  <em>Recorded in Unreal Engine 5.8 on the grey-box test level at a locked 60 fps. Every frame is rendered, and there's no screen capture.</em>
 </p>
 
 | What you're seeing | How it's built |
