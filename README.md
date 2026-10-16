@@ -29,6 +29,28 @@ public here is the *method*.
 
 ---
 
+## In motion
+
+<p align="center">
+  <a href="docs/media/hawk-transform.mp4">
+    <img src="docs/media/hawk-transform-preview.gif" alt="Wildland: Áhí transforms into a hawk, flies, and changes back into human form in mid-air, recorded in Unreal Engine 5.8" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Human → hawk → human</strong><br>
+  <em>Recorded in Unreal Engine 5.8 on the grey-box test level at a locked 60 fps. Every frame is rendered, and there's no screen capture.</em><br>
+  <a href="docs/media/hawk-transform.mp4"><strong>▶ Watch in full quality (1080p60, 12.6 s)</strong></a>
+</p>
+
+| What you're seeing | How it's built |
+|---|---|
+| Her body dissolves away | A mesh-dissolve effect breaks the character apart |
+| The hawk forms and takes flight | The same dissolve runs in reverse, so the bird builds itself out of the particles. A C++ transformation state machine hands control to the flight pawn with no hitch (≤ 1.6 ms). |
+| She changes back in mid-air | The return runs the same dissolve the other way, and she drops back into third-person control |
+
+---
+
 ## What I actually do here
 
 I'm the director, architect, and sole authority on this project. Concretely, hands-on, every day:
