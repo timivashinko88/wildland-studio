@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/6d015e0f-ae25-4330-84e2-fd5273257acc
-
 <p align="center">
   <img src="docs/media/wildland-hero.jpg" alt="Wildland — in-engine capture: Áhí, the player character, in a golden-hour pine forest with the gameplay HUD, Unreal Engine 5.8" width="100%">
 </p>
@@ -35,14 +31,9 @@ public here is the *method*.
 
 ## In motion
 
-<p align="center">
-  <img src="docs/media/hawk-transform-preview.gif" alt="Wildland: Áhí transforms into a hawk, flies, and changes back into human form in mid-air, recorded in Unreal Engine 5.8" width="100%">
-</p>
+**Human → hawk → human.** This was recorded in Unreal Engine 5.8 on the grey-box test level at a locked 60 fps. Every frame is rendered, and there's no screen capture.
 
-<p align="center">
-  <strong>Human → hawk → human</strong><br>
-  <em>Recorded in Unreal Engine 5.8 on the grey-box test level at a locked 60 fps. Every frame is rendered, and there's no screen capture.</em>
-</p>
+https://github.com/user-attachments/assets/6d015e0f-ae25-4330-84e2-fd5273257acc
 
 | What you're seeing | How it's built |
 |---|---|
